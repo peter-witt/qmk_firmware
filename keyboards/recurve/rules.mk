@@ -9,8 +9,7 @@ MCU = atmega32u4
 #   LUFA DFU     lufa-dfu
 #   QMK DFU      qmk-dfu
 #   atmega32a    bootloadHID
-#BOOTLOADER = atmel-dfu
-BOOTLOADER = caterina
+BOOTLOADER = atmel-dfu
 
 
 # If you don't know the bootloader type, then you can specify the
