@@ -32,6 +32,7 @@ enum custom_keycodes {
 #define XXXXXXX KC_NO
 #define _______ KC_TRNS
 #define LALTBS LALT(KC_BSPC)
+#define LCTLBS LCTL(KC_BSPC)
 #define RUN LCTL(KC_R)
 #define SFTTAB LSFT(KC_TAB)
 #define GUISPC LGUI(KC_SPACE)
@@ -46,13 +47,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LSFT, KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,   KC_B,    RUN,     KC_PGUP, KC_DEL,  KC_N,     KC_M,    KC_COMM, KC_DOT, KC_SLSH, KC_UP,   KC_DEL,
     KC_LCTL, KC_LCTL, KC_LCTL, KC_LALT, KC_LGUI, LOWER,  KC_BSPC, KC_HOME, KC_PGDN, KC_END,  KC_SPACE, KC_LSFT, KC_RCTL, KC_APP, KC_LEFT, KC_DOWN, KC_RGHT
   ),
-  [_RAISE] = LAYOUT(
 
-    RESET,   _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______, LALTBS,
+  [_RAISE] = LAYOUT(
+    RESET,   _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______, LCTLBS,
     _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______, KC_PGUP, KC_UP,   KC_PGDN, _______, _______, _______,
     _______, _______, KC_LSFT, KC_TAB,  KC_LALT, KC_LGUI, KC_LCTL, _______,          KC_DEL,  KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_END,  KC_DEL,  _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, LALTBS,  _______, _______, _______, GUISPC,  _______, _______, _______, _______, _______, _______
+    _______, _______, _______, _______, _______, _______, LCTLBS,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
   ),
 
   [_LOWER] = LAYOUT(
